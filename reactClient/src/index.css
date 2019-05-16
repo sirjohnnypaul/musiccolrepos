@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.ComponentTitle {
+  height: auto;
+  background:rgb(215, 212, 212);
+}
+
+.albumCard {
+  /* padding: 20px; */
+}
+
+.albumCardNews {
+  
+  max-width: 450px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.bandCard {
+}
+
+.newsCard {
+
+}
+
+.albumBody {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.newsBody {
+  height: auto;
+}
+
+.albumButton {
+  display: inline-block;
+  margin: 5px;
+  width: 40%;
+}
+
+/* Album Details */
+
+.cardBodyImage {
+  /* display: inline-block; */
+  /* width: 400px;
+  height: auto; */
+}
+
+.bandCardBodyImage {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.textCardDetails {
+  width: 80%;
+}
+
+.homePage {
+  background: url('./img/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100wv;
+}
+
+.buttonHome {
+  opacity: 0.8;
+  width: 45%;
+}
+
+.homeContent {
+  padding-top:150px;
+  padding-bottom:150px;
+}
+
+/* tracks */
+
+
+/* .imageTrack {
+  width: 30%;
+  height: auto;
+  display: inline-block;
+} */
+
+/* loading */
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 100%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #343a40;
+  border-bottom-color: #ffffff;
+  animation: loading-spin 1s linear infinite;
+}
+
+@keyframes loading-spin {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.page-load {
+  animation: page-fade-in 0.2s linear;
+}
+
+@keyframes page-fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+.searchbar{
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  border-radius: 30px;
+  padding: 10px;
+  }
+
+  .search_input{
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 300px;
+  caret-color:red;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+  background: white;
+  color: #e74c3c;
+  }
+
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  }
